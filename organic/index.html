@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajio</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      .header {
+        width: 95.8%;
+        height: 70px;
+        display: inline-block;
+        padding: 30px;
+        background-color: rgb(37, 37, 48);
+        color: white;
+        overflow: hidden;
+        position: sticky;
+        top: 0%;
+      }
+      .header img {
+        height: 90px;
+        width: 120px;
+        display: inline;
+        margin-left: 20px;
+        border-radius: 50%;
+        margin-top: 0%;
+      }
+      nav {
+        display: flex;
+        float: right;
+      }
+      nav li {
+        display: inline;
+        padding: 15px;
+        color: white;
+        font-size: larger;
+      }
+      nav li a {
+        color: rgb(255, 255, 255);
+        line-height: 90px;
+        text-decoration: none;
+      }
+      .l1 {
+        margin-left: 100px;
+      }
+      .page1 {
+        border-style: double;
+        border-width: 5px;
+        border-radius: 20px;
+        border-color: rgb(9, 83, 51);
+        margin: 4px;
+        height: 300px;
+        width: 80%;
+        text-align: center;
+        margin-left: 160px;
+        margin-top: 40px;
+      }
+      .page1 img {
+        margin: 10px;
+        border-radius: 50%;
+        display: inline;
+        float: left;
+      }
+      .page1 h2 {
+        margin-top: 70px;
+      }
+      .page2 {
+        margin-top: 29px;
+        display: inline-block;
+        background-color: rgb(59, 118, 0);
+        width: 180px;
+        height: 60px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .page2 img {
+        display: inline;
+        margin-right: 0%;
+        margin-top: 9px;
+        width: 40px;
+      }
+      .page2 a {
+        display: inline;
+        text-align: center;
+        font-size: x-large;
+        color: black;
+        text-decoration: none;
+        line-height: 60px;
+      }
+      .page2:hover {
+        cursor: alias;
+        background-color: rgb(119, 110, 110);
+        color: white;
+      }
+      .page3 {
+        margin: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        color: white;
+        font-size: large;
+        background-color: black;
+        border-radius: 20px;
+        height: 400px;
+        width: 80%;
+        margin-left: 160px;
+        text-align: center;
+      }
+      .page3 img {
+        width: 300px;
+        height: 200px;
+        border-radius: 20%;
+      }
+      .page3 span {
+        color: green;
+        font-size: xx-large;
+      }
+      #page4 {
+        color: darkgreen;
+        margin: 50px;
+        font-size: large;
+        height: 600px;
+        width: 80%;
+        margin-left: 150px;
+        text-align: center;
+      }
+      #page4 img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+      }
+      #page4 td img {
+        width: 200px;
+        height: 250px;
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+      .page5 {
+        margin-left: 280px;
+      }
+      .page5 img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+      }
+      .page5 a {
+        color: rgb(131, 3, 3);
+        font-size: x-large;
+      }
+      .page6 {
+        display: inline-block;
+        margin-left: 180px;
+        height: 130px;
+        width: 75%;
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        margin-top: 90px;
+        background-color: black;
+        color: white;
+      }
+      .page6 h2 {
+        text-align: center;
+        display: inline;
+        margin-left: 130px;
+        line-height: 130px;
+        font-size: xx-large;
+      }
+      .bt2 {
+        width: 100px;
+        height: 30px;
+        margin-left: 200px;
+        font-size: large;
+        background-color: green;
+        color: white;
+        border-radius: 9px;
+      }
+      .page7 h2 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .container {
+        display: flex;
+        height: 250px;
+        width: 75%;
+        margin-left: 320px;
+      }
+      .container img {
+        margin: 20px;
+        box-shadow: 0 0 10px 10px rgb(228, 143, 188);
+      }
+      .page8 {
+        height: 300px;
+        width: 75%;
+        margin-left: 180px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        background-color: black;
+        color: white;
+      }
+      .page8 div {
+        margin: 30px;
+        width: 500px;
+      }
+      .page8 img {
+        border-radius: 30px;
+      }
+      .page8 a {
+        display: grid;
+        margin-top: 20px;
+      }
+      #footer {
+        height: 200px;
+        width: 75%;
+        margin-left: 180px;
+        margin-top: 0px;
+        background-color: black;
+        color: white;
+        margin-top: 90px;
+        line-height: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="logo.png" />
+      <nav>
+        <ul>
+          <li><a class="l1" href="index.html"> Home </a></li>
+          <li><a href="#page4" style="scroll-behavior: smooth;"> Category </a></li>
+          <li><a href="feed.html"> Feedback </a></li>
+          <li><a href="#page5"> Review </a></li>
+          <li><a href="#footer"> Contact us </a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page1">
+      <img src="d1.jpg" />
+      <h2>
+        Welcome to the great shopping mela!!<br />
+        The offer will starts on 15/06/2024
+      </h2>
+      <br />
+      AJIO, a fashion and lifestyle brand, is Reliance Retail's digital commerce
+      initiative and is the ultimate fashion destination for styles that are
+      handpicked, on trend and at prices that are the best you'll find anywhere.
+
+      <br />
+      <div class="page2">
+        <img src="icons8-buying.gif" />
+        <a href="https://www.ajio.com/"><b> Shop Here </b></a>
+      </div>
+    </div>
+    <div class="page3">
+      <table cellspacing="60px">
+        <tr>
+          <td><img src="free.png" /></td>
+          <td><img src="card.png" /></td>
+          <td><img src="dis.jpg" /></td>
+        </tr>
+        <tr>
+          <td>
+            Free <span>Shiping</span> On <br />
+            Order Above 599!!
+          </td>
+          <td>
+            Payment can be Done by<br />
+            <span> Securely</span>
+          </td>
+          <td>
+            First <span>100 Customers</span> will Have the Discount coupon
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="page4">
+      <h2>Best Selling Products</h2>
+      <br />
+      <img src="best.jpg" />
+      <br />
+      <table cellspacing="10px">
+        <tr>
+          <td>
+            <a href="dressw.html" target="_blank"
+              ><img src="d3.jpg"
+            /></a>
+          </td>
+          <td>
+            <a href="dressg.html" target="_blank"
+              ><img src="d1.jpg"
+            /></a>
+          </td>
+          <td>
+            <a
+              href="dressk.html"
+              target="_blank"
+              ><img src="d6.jpg"
+            /></a>
+          </td>
+          <td>
+            <a
+              href="dressb.html"
+              target="_blank"
+              ><img src="d7.jpg"
+            /></a>
+          </td>
+          <td>
+            <a href="dressm.html" target="_blank"
+              ><img src="d5.jpg"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td>Womens Wear</td>
+          <td>Girl Baby</td>
+          <td>Wedding mart</td>
+          <td> Boy baby </td>
+          <td>Mens Wear</td>
+        </tr>
+        <tr>
+          <td>&pound;300<br> MRP <del>&#8377;1000</del> (57% OFF)</td>
+          <td>&pound;800<br> MRP <del>&#8377;1800</del> (50% OFF)</td>
+          <td>&pound;1000<br> MRP <del>&#8377;10000</del> (90% OFF)</td>
+          <td>&pound;600<br> MRP <del>&#8377;900</del> (25% OFF)</td>
+          <td>&pound;700<br> MRP <del>&#8377;1000</del> (50% OFF)</td>
+        </tr>
+      </table>
+    </div>
+    <div class="page6">
+      <h2>Get 25% off on your First purchase</h2>
+      <button class="bt2">shopnow</button>
+    </div>
+    <div class="page7">
+      <h2>Try it for Free. No Registration Needed !!</h2>
+    </div>
+    <div class="container">
+      <img src="saree.jpg" />
+      <img src="vasti.jpg" />
+      <img src="lehanga.jpg" />
+      <img src="coat.jpg" />
+    </div>
+    <br />
+    <div class="page5" id="page5">
+      <table>
+        <tr>
+          <td><img src="d3.jpg" /></td>
+        </tr>
+        <tr>
+          <td>
+            <a><br />&starf; &starf;&starf;&starf;&star;</a><br />
+            <b>KEERTHANA PALANISAMY</b><br />
+            Great user experience on your website. I found exactly what I was
+            looking for at a great price. I will definitely be telling my
+            friends.<br /><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><img src="d2.jpg" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <a>&starf; &starf;&starf;&starf;&star;</a><br />
+            <b>PREETHA PRASANTH</b><br />
+            Thank you for the excellent shopping experience. It arrived quickly
+            and was exactly as described. I will definitely be shopping with you
+            again in the future.<br /><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td><img src="d1.jpg" /></td>
+          <br />
+        </tr>
+        <tr>
+          <td>
+            <a> &starf; &starf;&starf;&starf;&star;</a><br />
+            <b> KARTHIKA SEKAR </b><br />
+            Great user experience on your website. I found exactly what I was
+            looking for at a great price. I will definitely be telling my
+            friends.
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="page8">
+      <div>
+        <img src="logo.png" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nulla
+          odio illum mollitia repellendus non natus ipsa, molestiae quaerat
+          sapiente necessitatibus porro? Iusto, voluptatibus aut? Nulla, et
+          perspiciatis? Unde, natus!
+        </p>
+      </div>
+      <div>
+        <h2>Quick links</h2>
+        <a> Home </a>
+        <a> About us</a>
+        <a> Contact </a>
+        <a> Profile </a>
+        <a> Cart </a>
+      </div>
+      <div>
+        <h2>Download Your MobileApp</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet
+          labore nostrum quibusdam deleniti, voluptate pariatur eligendi
+          explicabo. Esse laboriosam ad dolorum porro, molestiae, quia enim in
+          quisquam obcaecati aliquam, dolorem quaerat? Recusandae quis officiis
+          praesentium corrupti deleniti explicabo mollitia dolore atque qui
+          totam ipsa perferendis delectus, facilis vero modi ullam obcaecati
+          dolorem repellendus neque porro quo quibusdam nulla. Ratione!
+        </p>
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+        <h2>Contact Us</h2>
+        <hr />
+        <br />
+        <a>
+          Phone no :+91 8754887548<br />
+          Email : ajiomart@gmail.com<br />
+          Address : Trends , Prozone mall , coimbatore - 641 035
+        </a>
+        <hr />
+        <a> Copyright@2024 | Ajiomart </a>
+      </div>
+    </div>
+  </body>
+</html>
